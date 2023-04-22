@@ -1,0 +1,23 @@
+body {
+    font: 100%/1.45em "Verdana", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  table.dataTable.stripe tbody tr.odd:hover,table.dataTable tbody tr:hover {
+     background-color:#a7cd2b !important;
+  }
+  
+
+  #example_filter input {
+   border-radius: 6px;
+   background-color: #a7cd2b;
+height: 35px;
+width: 400px;
+font-size: 20px;
+
+ }
+
+ 
