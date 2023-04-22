@@ -37,6 +37,10 @@ abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted
 }
+.newlogo{
+    height: 150px;
+    width: 150px;
+}
 
 h1,
 h2,
