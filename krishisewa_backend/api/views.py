@@ -17,7 +17,6 @@ def calculate_transport_cost(request):
 
 
     for destination in destination_districts:
-        # Skip the origin district
         if origin == destination:
             continue
 
@@ -26,12 +25,12 @@ def calculate_transport_cost(request):
 
         cost = distance * 0.001 * 0.4 * quantity
 
-        # Add the transport cost to the list
+        
         transport_cost.append({
             'destination': destination,
             'cost': cost
         })
 
-    # Return the transport cost as a JSON response
+
     return Response({'transport_cost': transport_cost})
 
