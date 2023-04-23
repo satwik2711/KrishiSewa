@@ -1,0 +1,99 @@
+version: '3.1'
+intents:
+- affirm
+- ask_best_paddy_plant_time
+- ask_soil_preparation
+- ask_best_pesticides_fertilizer
+- ask_best_water_level
+- ask_weed_control
+- ask_how_pests_control
+- ask_paddy_spacing
+- ask_paddy_harvest
+- ask_best_harvest_method
+- ask_store_paddy
+- ask_common_challenges
+- ask_increase_yield
+- ask_suited_paddy
+- ask_prevent_lodging
+- ask_organic_conventional
+- ask_paddy_sustainable
+- ask_paddy_price
+- ask_paddy_cost
+- ask_paddy_schemas
+- ask_improve_soil_fertility
+- ask_professional_help
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye! Have a Great Day ahead!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_best_paddy_time:
+  - text: In India, the best time to plant paddy is between April and September, depending on the location and climate.
+  utter_soil_preparation:
+  - text: The soil should be plowed and leveled, and organic fertilizers such as compost or cow dung can be added to improve soil fertility.
+  utter_best_pesticides_fertilizer:
+  - text: Farmers in India commonly use chemical fertilizers such as Urea, Triple superphosphate, Muriate of potash, Ammonium sulfate and NPK (nitrogen, phosphorus, potassium) fertilizers and pesticides such as Chlorpyrifos, Cypermethrin, and Malathion although organic alternatives such as compost, green manure, neem oil, and biopesticide are also available.
+  utter_best_water_level:
+    - text: The ideal water level for paddy farming in India is between 5 to 7 inches, depending on the stage of growth.
+  utter_weed_control:
+    - text: Farmers can use herbicides or manual weeding to control weeds in paddy fields. Some of the commonly used herbicides are Butachlor, 2,4-D, Glyphosate, Pretilachlor and Fenoxaprop-p-ethyl.
+  utter_how_pests_control:
+    - text: Pesticides are commonly used to protect paddy crops from pests and diseases. Integrated Pest Management (IPM) practices are also promoted by the government as a more sustainable approach.
+    - text: Pesticides commonly used in paddy fields include insecticides, fungicides, and herbicides. However, the excessive use of pesticides can have negative impacts on human health and the environment.
+    - text: The commonly used IPM practices are Crop rotation, Biological control, Culture and Chemical control.
+  utter_paddy_spacing:
+    - text: The recommended spacing between paddy plants in India is 8 inches.
+  utter_paddy_harvest:
+    - text: Paddy crops are usually ready for harvest after 120 to 140 days from planting, depending on the variety and weather conditions.
+  utter_best_harvest_method:
+    - text: Paddy crops are usually harvested by hand or by using a harvester machine.
+  utter_store_paddy:
+    - text: Harvested paddy is usually sun-dried on a concrete or tarpaulin surface before being stored in a dry and well-ventilated area.
+  utter_common_challenges:
+    - text: Common challenges faced by paddy farmers in India include unpredictable weather, high input costs, and low market prices.
+    - text: Farmers can overcome these challenges by adopting sustainable practices, utilizing government subsidies, and exploring alternative markets.
+  utter_increase_yield:
+    - text: Farmers can increase the yield of their paddy crops by using high-yielding varieties, proper irrigation, and fertilization, and adopting modern farming techniques.
+  utter_suited_paddy:
+    - text: There are many different varieties of paddy in India, and the best variety for a particular farm will depend on factors such as soil type, climate, and market demand.
+  utter_prevent_lodging:
+    - text: Lodging in paddy crops can be prevented by using proper fertilization, reducing plant density, and avoiding over-irrigation.
+  utter_organic_conventional:
+    - text: Organic paddy farming uses natural fertilizers and pest control methods and avoids synthetic chemicals, while conventional paddy farming uses chemical inputs.
+  utter_paddy_sustainable:
+    - text: Farmers can make their paddy farming more sustainable by adopting practices such as crop rotation, integrated pest management, and water conservation.
+  utter_paddy_price:
+    - text: Paddy is a staple food in India, and the market demand is generally stable. Farmers can get the best price for their crop by selling directly to consumers or through cooperatives.
+  utter_paddy_cost:
+    - text: To calculate the cost of production for paddy farming, you need to consider expenses such as land preparation, seed cost, fertilizer and pesticide cost, labor cost, and other miscellaneous expenses. The total cost divided by the total yield gives you the cost of production per kilogram.
+  utter_paddy_schemas:
+    - text: In India, the government offers various schemes to support paddy farmers, including subsidies for fertilizer and pesticide, crop insurance, credit facilities, and technical assistance through extension services.
+  utter_improve_soil_fertility:
+    - text: To improve the soil fertility of a paddy field, farmers can use organic fertilizers such as compost, manure, and green manure crops. Crop rotation and intercropping with leguminous crops can also improve soil fertility.
+    - text: Additionally, farmers can use conservation tillage practices such as minimum tillage and zero tillage to reduce soil erosion and improve soil structure. Maintaining proper water management and avoiding overuse of chemical fertilizers and pesticides can also help maintain soil fertility in the long term.
+  utter_ask_professional_help:
+    - text: Here are some Information on how to contact officials to answer the questions and doubts you have.
+    - text: Agriculture Advisory Service - Call 1920
+    - text: Labuduwa Rice Research Station - Call 0912 244 345
+    - text: Indian Rice Research and Development Institute -  Call 0372 258 561
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_greet
+- utter_stress_info
