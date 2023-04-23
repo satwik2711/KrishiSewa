@@ -12,8 +12,12 @@
 :before {
     --tw-content: ""
 }
+.main_body{
+    background-color: #F6F6F2;
+}
 
 html {
+    
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     -moz-tab-size: 4;
@@ -4554,6 +4558,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
     background: #fff;
     color: #333;
     box-shadow: 0 3px 14px rgba(0, 0, 0, .4)
+}
+.container-header{
+    background-color: #2d7753;
+}
+.footer{
+    background-color: #17252A;
 }
 
 .leaflet-container a.leaflet-popup-close-button {
