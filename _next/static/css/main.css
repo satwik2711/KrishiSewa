@@ -592,6 +592,12 @@ video {
     line-height: 1.5
 }
 
+.button-link {
+    padding: 10px 20px;
+    background-color: #a61e4d;
+    color: #eee;
+  }
+
 .prose :where(h4 strong):not(:where([class~=not-prose] *)) {
     font-weight: 700
 }
